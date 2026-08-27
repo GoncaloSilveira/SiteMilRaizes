@@ -1,0 +1,16 @@
+# Dependências
+node_modules/
+
+# Variáveis de ambiente — NUNCA commitar
+.env
+.env.local
+.env.production
+
+# Vercel
+.vercel/
+
+# macOS
+.DS_Store
+
+# Uploads temporários
+uploads/

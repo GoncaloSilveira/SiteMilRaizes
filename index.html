@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mil Raízes — Construção e Manutenção de Espaços Verdes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav is-hero" id="nav">
+  <div class="container nav__row">
+    <a href="#top" class="nav__logo">
+      <img src="assets/logo.png" alt="Mil Raízes">
+    </a>
+    <div class="nav__links">
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#sustentabilidade">Sustentabilidade</a>
+      <a href="#contactos">Contactos</a>
+    </div>
+    <button class="nav__cta" data-open-quote>Pedir Orçamento</button>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<div class="hero-pin" id="heroPin">
+  <header class="hero" id="top">
+    <div class="hero__media">
+      <video class="hero__video" id="heroVideo" src="assets/hero-video.mp4" muted playsinline preload="auto"></video>
+      <div class="hero__gradient"></div>
+    </div>
+
+    <div class="hero__content">
+      <div class="container hero__grid">
+        <div>
+          <div class="hero__eyebrow eyebrow">Desde 2003 · Guilhabreu, Vila do Conde</div>
+          <h1 id="heroTitle">Onde a paisagem<br><em>cria raízes.</em></h1>
+        </div>
+        <div class="hero__meta">
+          <div class="hero__meta-rule"></div>
+          <p>Projetamos, construímos e gerimos a manutenção de espaços verdes para instituições, empresas e particulares — com técnica, criatividade e respeito pelo meio ambiente.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__bottom">
+      <div class="container hero__bottom-row">
+        <div class="hero__scroll-indicator">
+          <div class="hero__scroll-bounce">
+            <span class="hero__scroll-label">Scroll</span>
+            <span class="hero__scroll-arrow" aria-hidden="true">↓</span>
+          </div>
+        </div>
+        <span>Cap. I — A empresa</span>
+      </div>
+    </div>
+  </header>
+</div>
+
+<!-- ============ SOBRE ============ -->
+<section class="section" id="sobre">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow" style="margin-bottom: 24px;">Cap. I · A Empresa</div>
+        <h2>Vinte e dois<br>anos a <em>plantar</em><br>paisagens.</h2>
+      </div>
+      <div class="section-head__intro">
+        <p>Fundada em 2003, a Mil Raízes nasceu da experiência acumulada do seu sócio gerente nas maiores empresas portuguesas do setor dos espaços verdes — e cresce, ano após ano, ao ritmo dos projetos que abraça.</p>
+      </div>
+    </div>
+
+    <div class="about__grid">
+      <div class="reveal">
+        <p class="about__lead">Resolvemos os desafios dos nossos clientes com base na <em>técnica</em> e na <em>criatividade</em> que nos definem — sempre de olhos postos na redução de custos e no respeito pelo meio ambiente.</p>
+        <div class="about__body">
+          <p>Trabalhamos para um conjunto diversificado de clientes — instituições estatais, empresas dos setores da construção civil, indústria e turismo, e clientes particulares — com a mesma exigência técnica e atenção ao detalhe.</p>
+          <p>Ao longo dos anos, mantivemos um crescimento sustentável: aumentando constantemente a carteira de clientes, modernizando equipamentos e reforçando uma equipa apaixonada pelo que faz.</p>
+        </div>
+      </div>
+
+      <aside class="about__sidecard reveal" data-delay="1">
+        <h4>Marcos da Empresa</h4>
+        <div class="about__milestone">
+          <span class="about__milestone-num">2003</span>
+          <span class="about__milestone-text"><strong>Fundação</strong>Constituição em Guilhabreu, Vila do Conde.</span>
+        </div>
+        <div class="about__milestone">
+          <span class="about__milestone-num">22+</span>
+          <span class="about__milestone-text"><strong>Anos de actividade</strong>Crescimento sustentável ininterrupto.</span>
+        </div>
+        <div class="about__milestone">
+          <span class="about__milestone-num">6</span>
+          <span class="about__milestone-text"><strong>Áreas de especialização</strong>Da construção à manutenção e rega.</span>
+        </div>
+        <div class="about__milestone">
+          <span class="about__milestone-num">∞</span>
+          <span class="about__milestone-text"><strong>Compromisso ambiental</strong>Norteia cada decisão técnica.</span>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVIÇOS ============ -->
+<section class="section section--paper-warm" id="servicos">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow" style="margin-bottom: 24px;">Cap. II · O que fazemos</div>
+        <h2>Seis disciplinas,<br>uma <em>visão</em>.</h2>
+      </div>
+      <div class="section-head__intro">
+        <p>Do desenho do projeto à manutenção contínua, reunimos sob o mesmo teto todas as competências necessárias para que o seu espaço verde nasça, cresça e perdure.</p>
+      </div>
+    </div>
+
+    <div class="services__list reveal">
+      <article class="service" data-service="construcao">
+        <span class="service__num">01 / 06</span>
+        <h3 class="service__title">Construção de Espaços Verdes</h3>
+        <p class="service__desc">Execução de projetos chave-na-mão — modelação de terreno, plantação, pavimentos e estruturas vivas para instituições, empresas e moradias.</p>
+        <span class="service__cta">Saber mais <span class="service__cta-arrow">→</span></span>
+        <div class="service__media"><div class="service-media-placeholder"><img class="service__img" src="assets/fotos_site_atual/fotos_empresa/somos-01.jpg" alt="Construção de Espaços Verdes"></div></div>
+      </article>
+
+      <article class="service" data-service="manutencao">
+        <span class="service__num">02 / 06</span>
+        <h3 class="service__title">Manutenção de Jardins</h3>
+        <p class="service__desc">Programas regulares de cuidado e conservação — corte, poda, fertilização, controlo fitossanitário e gestão de resíduos.</p>
+        <span class="service__cta">Saber mais <span class="service__cta-arrow">→</span></span>
+        <div class="service__media"><div class="service-media-placeholder"><img class="service__img" src="assets/fotos_site_atual/fotos_empresa/somos-02.jpg" alt="Manutenção de Jardins"></div></div>
+      </article>
+
+      <article class="service" data-service="rega">
+        <span class="service__num">03 / 06</span>
+        <h3 class="service__title">Sistemas de Rega Automáticos</h3>
+        <p class="service__desc">Projeto, instalação e otimização de sistemas de rega — eficiência hídrica, sensores e telegestão para reduzir consumos e custos.</p>
+        <span class="service__cta">Saber mais <span class="service__cta-arrow">→</span></span>
+        <div class="service__media"><div class="service-media-placeholder"><img class="service__img" src="assets/fotos_site_atual/fotos_empresa/somos-03.jpg" alt="Sistemas de Rega Automáticos"></div></div>
+      </article>
+
+      <article class="service" data-service="paisagismo">
+        <span class="service__num">04 / 06</span>
+        <h3 class="service__title">Paisagismo &amp; Design de Jardins</h3>
+        <p class="service__desc">Conceito, plantas-tipo e plano vegetal — criamos jardins com identidade, adaptados ao clima, ao terreno e ao modo de vida de cada cliente.</p>
+        <span class="service__cta">Saber mais <span class="service__cta-arrow">→</span></span>
+        <div class="service__media"><div class="service-media-placeholder"><img class="service__img" src="assets/fotos_site_atual/fotos_empresa/empresa-04.png" alt="Paisagismo &amp; Design de Jardins"></div></div>
+      </article>
+
+      <article class="service" data-service="campos">
+        <span class="service__num">05 / 06</span>
+        <h3 class="service__title">Manutenção de Campos Desportivos</h3>
+        <p class="service__desc">Cuidado especializado de relvados desportivos — programas de aeração, ressementeira, top-dressing e marcação para máxima performance.</p>
+        <span class="service__cta">Saber mais <span class="service__cta-arrow">→</span></span>
+        <div class="service__media"><div class="service-media-placeholder"><img class="service__img" src="assets/fotos_site_atual/fotos_empresa/empresa-05.png" alt="Manutenção de Campos Desportivos"></div></div>
+      </article>
+
+      <article class="service" data-service="transplante">
+        <span class="service__num">06 / 06</span>
+        <h3 class="service__title">Transplante de Árvores de Grande Porte</h3>
+        <p class="service__desc">Operação técnica de remoção, transporte e replantação de árvores adultas — preservando património arbóreo em obras e requalificações.</p>
+        <span class="service__cta">Saber mais <span class="service__cta-arrow">→</span></span>
+        <div class="service__media"><div class="service-media-placeholder"><img class="service__img" src="assets/fotos_site_atual/projetos/projeto-26.jpg" alt="Transplante de Árvores de Grande Porte"></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NÚMEROS ============ -->
+<section class="section section--ink">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow" style="margin-bottom: 24px;">Cap. III · Em números</div>
+        <h2>O que <em>22 anos</em><br>nos permitem dizer.</h2>
+      </div>
+      <div class="section-head__intro">
+        <p>Crescimento sustentável, carteira diversificada, equipamentos cada vez mais capazes — e uma equipa que continua, todos os dias, a fazer mais e melhor.</p>
+      </div>
+    </div>
+    <div class="stats__grid reveal">
+      <div class="stat">
+        <span class="stat__num" data-count="22">22</span>
+        <span class="stat__label">Anos de actividade</span>
+        <span class="stat__sub">Crescimento ininterrupto desde 2003.</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num" data-count="350">350</span>
+        <span class="stat__label">Projetos concluídos</span>
+        <span class="stat__sub">Públicos, privados e particulares.</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num" data-count="120">120</span>
+        <span class="stat__label">Clientes activos</span>
+        <span class="stat__sub">Contratos de manutenção contínua.</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num" data-count="6">6</span>
+        <span class="stat__label">Áreas de competência</span>
+        <span class="stat__sub">Da concepção à manutenção.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PORTFOLIO ============ -->
+<section class="section" id="projetos">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow" style="margin-bottom: 24px;">Cap. IV · Portefólio</div>
+        <h2>Trabalhos<br><em>recentes</em>.</h2>
+      </div>
+      <div class="section-head__intro">
+        <p>Uma seleção de projetos realizados nos últimos anos, em contextos públicos, empresariais e residenciais. Cada espaço é um estudo de caso único.</p>
+      </div>
+    </div>
+
+    <div class="portfolio__grid reveal">
+      <article class="portfolio__item portfolio__item--lg">
+        <div class="portfolio__media">
+          <div class="portfolio__placeholder">
+            <img class="portfolio__img" src="assets/fotos_site_atual/projetos/projeto-16-aug.jpg" alt="Quinta da Boa Vista">
+          </div>
+        </div>
+        <div class="portfolio__caption">
+          <span class="portfolio__title">Quinta da Boa Vista</span>
+          <span class="portfolio__meta">Construção · 2024</span>
+        </div>
+      </article>
+
+      <article class="portfolio__item portfolio__item--md">
+        <div class="portfolio__media">
+          <div class="portfolio__placeholder">
+            <img class="portfolio__img" src="assets/fotos_site_atual/projetos/projeto-17.png" alt="Resort Atlântico">
+          </div>
+        </div>
+        <div class="portfolio__caption">
+          <span class="portfolio__title">Resort Atlântico</span>
+          <span class="portfolio__meta">Manutenção · 2024</span>
+        </div>
+      </article>
+
+      <article class="portfolio__item portfolio__item--sm">
+        <div class="portfolio__media">
+          <div class="portfolio__placeholder">
+            <img class="portfolio__img" src="assets/fotos_site_atual/projetos/projeto-19.png" alt="Praça do Mercado">
+          </div>
+        </div>
+        <div class="portfolio__caption">
+          <span class="portfolio__title">Praça do Mercado</span>
+          <span class="portfolio__meta">Requalificação · 2023</span>
+        </div>
+      </article>
+
+      <article class="portfolio__item portfolio__item--full">
+        <div class="portfolio__media">
+          <div class="portfolio__placeholder">
+            <img class="portfolio__img" src="assets/fotos_site_atual/projetos/projeto-22.png" alt="Campus Norte">
+          </div>
+        </div>
+        <div class="portfolio__caption">
+          <span class="portfolio__title">Campus Norte</span>
+          <span class="portfolio__meta">Construção + Rega · 2023</span>
+        </div>
+      </article>
+
+      <article class="portfolio__item portfolio__item--sm">
+        <div class="portfolio__media">
+          <div class="portfolio__placeholder">
+            <img class="portfolio__img" src="assets/fotos_site_atual/projetos/projeto-23.png" alt="Estádio Municipal">
+          </div>
+        </div>
+        <div class="portfolio__caption">
+          <span class="portfolio__title">Estádio Municipal</span>
+          <span class="portfolio__meta">Campos · 2022</span>
+        </div>
+      </article>
+
+      <article class="portfolio__item portfolio__item--md">
+        <div class="portfolio__media">
+          <div class="portfolio__placeholder">
+            <img class="portfolio__img" src="assets/fotos_site_atual/projetos/projeto-24.jpg" alt="Vivenda Particular">
+          </div>
+        </div>
+        <div class="portfolio__caption">
+          <span class="portfolio__title">Vivenda Particular</span>
+          <span class="portfolio__meta">Paisagismo · 2024</span>
+        </div>
+      </article>
+
+      <article class="portfolio__item portfolio__item--lg">
+        <div class="portfolio__media">
+          <div class="portfolio__placeholder">
+            <img class="portfolio__img" src="assets/fotos_site_atual/projetos/projeto-25.jpg" alt="Av. Marginal">
+          </div>
+        </div>
+        <div class="portfolio__caption">
+          <span class="portfolio__title">Av. Marginal</span>
+          <span class="portfolio__meta">Transplante · 2023</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SUSTENTABILIDADE ============ -->
+<section class="section section--paper-warm sust" id="sustentabilidade">
+  <div class="container">
+    <div class="sust__grid">
+      <div class="sust__media reveal">
+        <span class="sust__media-tag">[ Imagem · Boas práticas · 4:5 ]</span>
+      </div>
+
+      <div class="reveal" data-delay="1">
+        <div class="eyebrow" style="margin-bottom: 24px;">Cap. V · Sustentabilidade</div>
+        <h2>Crescer com <em>raízes</em><br>responsáveis.</h2>
+        <p class="sust__lead">Comprometemo-nos a desenvolver a nossa actividade de forma responsável — visando contribuir para o desenvolvimento sustentável da comunidade e dos colaboradores.</p>
+
+        <div class="sust__pillars">
+          <div class="sust__pillar">
+            <span class="sust__pillar-num">O1</span>
+            <div>
+              <h4 class="sust__pillar-title">Sustentabilidade económica</h4>
+              <p class="sust__pillar-desc">Melhorar a organização e consolidar a sustentabilidade económica da empresa.</p>
+            </div>
+          </div>
+          <div class="sust__pillar">
+            <span class="sust__pillar-num">O2</span>
+            <div>
+              <h4 class="sust__pillar-title">Padrões de qualidade</h4>
+              <p class="sust__pillar-desc">Promover a satisfação dos clientes através de padrões elevados em produtos e serviços.</p>
+            </div>
+          </div>
+          <div class="sust__pillar">
+            <span class="sust__pillar-num">O3</span>
+            <div>
+              <h4 class="sust__pillar-title">Gestão de resíduos</h4>
+              <p class="sust__pillar-desc">Minimizar a produção de poluição e privilegiar a valorização dos resíduos gerados.</p>
+            </div>
+          </div>
+          <div class="sust__pillar">
+            <span class="sust__pillar-num">O4</span>
+            <div>
+              <h4 class="sust__pillar-title">Melhoria contínua</h4>
+              <p class="sust__pillar-desc">Assegurar o cumprimento dos requisitos legais e melhorar continuamente o desempenho ambiental.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CLIENTES ============ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow" style="margin-bottom: 24px;">Cap. VI · Clientes</div>
+        <h2>Confiados por<br><em>quem mais exige</em>.</h2>
+      </div>
+      <div class="section-head__intro">
+        <p>Trabalhamos lado a lado com instituições, grupos hoteleiros, empresas industriais e construtoras — bem como centenas de particulares.</p>
+      </div>
+    </div>
+
+    <div class="clients__list reveal">
+      <div class="client"><img src="assets/fotos_site_atual/logos_clientes/cliente-02.png" alt="Cliente Mil Raízes"></div>
+      <div class="client"><img src="assets/fotos_site_atual/logos_clientes/cliente-03.png" alt="Cliente Mil Raízes"></div>
+      <div class="client"><img src="assets/fotos_site_atual/logos_clientes/cliente-04.png" alt="Cliente Mil Raízes"></div>
+      <div class="client"><img src="assets/fotos_site_atual/logos_clientes/cliente-05.png" alt="Cliente Mil Raízes"></div>
+      <div class="client"><img src="assets/fotos_site_atual/logos_clientes/cliente-06.png" alt="Cliente Mil Raízes"></div>
+      <div class="client"><img src="assets/fotos_site_atual/logos_clientes/cliente-07.png" alt="Cliente Mil Raízes"></div>
+      <div class="client"><img src="assets/fotos_site_atual/logos_clientes/cliente-08.png" alt="Cliente Mil Raízes"></div>
+      <div class="client"><img src="assets/fotos_site_atual/logos_clientes/cliente-09.png" alt="Cliente Mil Raízes"></div>
+      <div class="client"><img src="assets/fotos_site_atual/logos_clientes/cliente-10.png" alt="Cliente Mil Raízes"></div>
+      <div class="client"><img src="assets/fotos_site_atual/logos_clientes/cliente-11.png" alt="Cliente Mil Raízes"></div>
+      <div class="client"><img src="assets/fotos_site_atual/logos_clientes/cliente-12.png" alt="Cliente Mil Raízes"></div>
+      <div class="client"><img src="assets/fotos_site_atual/logos_clientes/cliente-13.png" alt="Cliente Mil Raízes"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ORÇAMENTO CTA ============ -->
+<section class="quote-cta">
+  <div class="container quote-cta__inner reveal">
+    <div class="eyebrow no-line quote-cta__eyebrow">Pronto para começar?</div>
+    <h2>Conte-nos o seu projeto<br>e prepare-se para <em>florescer</em>.</h2>
+    <p class="quote-cta__sub">Em poucos minutos, dê-nos uma ideia do que pretende — devolvemos-lhe um orçamento base personalizado.</p>
+    <button class="btn-primary" data-open-quote>
+      Pedir Orçamento
+      <span class="btn-primary-arrow">→</span>
+    </button>
+  </div>
+</section>
+
+<!-- ============ CONTACTOS ============ -->
+<section class="section" id="contactos">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow" style="margin-bottom: 24px;">Cap. VII · Contactos</div>
+        <h2>Onde nos<br><em>encontra</em>.</h2>
+      </div>
+      <div class="section-head__intro">
+        <p>Estamos sediados em Guilhabreu, Vila do Conde — mas o nosso raio de acção alcança todo o território nacional. Diga-nos onde está; nós aparecemos.</p>
+      </div>
+    </div>
+
+    <div class="contact__grid">
+      <div class="reveal">
+        <div class="contact__info-block">
+          <div class="contact__icon"><img src="assets/fotos_site_atual/contactos_icons/contacto-01.png" alt=""></div>
+          <h4>Morada</h4>
+          <p>Rua das Minas 1, Guilhabreu<br>4485-247 Vila do Conde</p>
+        </div>
+        <div class="contact__info-block">
+          <div class="contact__icon"><img src="assets/fotos_site_atual/contactos_icons/contacto-02.png" alt=""></div>
+          <h4>Telefone</h4>
+          <a href="tel:+351912386769">+351 912 386 769</a>
+        </div>
+        <div class="contact__info-block">
+          <div class="contact__icon"><img src="assets/fotos_site_atual/contactos_icons/contacto-03.png" alt=""></div>
+          <h4>E-mail</h4>
+          <a href="mailto:milraizes@milraizes.pt">milraizes@milraizes.pt</a>
+        </div>
+        <div class="contact__info-block">
+          <div class="contact__icon"><img src="assets/fotos_site_atual/contactos_icons/contacto-04.png" alt=""></div>
+          <h4>Horário</h4>
+          <p>Segunda a Sexta · 09h00 — 18h00</p>
+        </div>
+      </div>
+
+      <div class="contact__map reveal" data-delay="1">
+        <div class="contact__map-grid"></div>
+        <svg class="contact__map-roads" viewBox="0 0 400 400" preserveAspectRatio="none">
+          <path d="M 0 220 Q 100 200 200 240 T 400 200" stroke="rgba(0,0,0,0.12)" stroke-width="3" fill="none"/>
+          <path d="M 180 0 Q 200 150 220 250 T 240 400" stroke="rgba(0,0,0,0.08)" stroke-width="2" fill="none"/>
+          <path d="M 0 100 L 400 80" stroke="rgba(0,0,0,0.06)" stroke-width="1.5" fill="none"/>
+          <path d="M 0 320 L 400 340" stroke="rgba(0,0,0,0.06)" stroke-width="1.5" fill="none"/>
+        </svg>
+        <div class="contact__map-pin">
+          <div class="contact__map-pin-dot"></div>
+          <div class="contact__map-pin-label">Guilhabreu · Vila do Conde</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <h3>Mil Raízes</h3>
+        <p>Construção e Manutenção de Espaços Verdes, Lda. — projetamos, construímos e gerimos espaços verdes desde 2003.</p>
+      </div>
+      <div class="footer__col">
+        <h5>Navegação</h5>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+          <li><a href="#contactos">Contactos</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h5>Contactos</h5>
+        <ul>
+          <li>Rua das Minas 1, Guilhabreu</li>
+          <li>4485-247 Vila do Conde</li>
+          <li><a href="tel:+351912386769">+351 912 386 769</a></li>
+          <li><a href="mailto:milraizes@milraizes.pt">milraizes@milraizes.pt</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Mil Raízes, Lda.</span>
+      <span>Política de Privacidade</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ MODAL ORÇAMENTO ============ -->
+<div id="quote-root"></div>
+
+<!-- ============ TWEAKS ============ -->
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="app.jsx"></script>
+
+<script>
+/* ============ Persisted tweak defaults ============ */
+window.MR_TWEAKS = /*EDITMODE-BEGIN*/{
+  "primaryGreen": "#2F6B2A",
+  "deepGreen": "#1e451b",
+  "headlineVariant": "Sonhou",
+  "serifFont": "Cormorant Garamond"
+}/*EDITMODE-END*/;
+
+/* ============ Apply tweaks immediately ============ */
+(function applyTweaks() {
+  const t = window.MR_TWEAKS;
+  const root = document.documentElement;
+  root.style.setProperty('--green-primary', t.primaryGreen);
+  root.style.setProperty('--green-deep', t.deepGreen);
+  if (t.serifFont) root.style.setProperty('--serif', `"${t.serifFont}", Georgia, serif`);
+
+  const headlines = [
+    { line1: "Onde a paisagem", line2: "<em>cria raízes.</em>" },
+    { line1: "Espaços verdes", line2: "<em>desenhados</em> para durar." },
+    { line1: "Plantamos hoje", line2: "o que será <em>amanhã</em>." },
+    { line1: "Da semente", line2: "ao <em>jardim</em> que sonhou." },
+    { line1: "Vinte e dois anos", line2: "a <em>cultivar</em> paisagens." }
+  ];
+  const labels = ['Raízes', 'Durar', 'Amanhã', 'Sonhou', '22 anos'];
+  const idx = labels.indexOf(t.headlineVariant);
+  const h = headlines[idx >= 0 ? idx : 0];
+  const el = document.getElementById('heroTitle');
+  if (el) el.innerHTML = `${h.line1}<br>${h.line2}`;
+})();
+</script>
+
+<script>
+/* ============ Scroll reveals ============ */
+const io = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('is-visible');
+      io.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+/* ============ Nav scroll state ============ */
+const nav = document.getElementById('nav');
+const hero = document.querySelector('.hero');
+const onScroll = () => {
+  const heroBottom = hero ? hero.getBoundingClientRect().bottom : 0;
+  if (heroBottom <= 80) {
+    nav.classList.add('is-scrolled');
+    nav.classList.remove('is-hero');
+  } else {
+    nav.classList.remove('is-scrolled');
+    nav.classList.add('is-hero');
+  }
+};
+window.addEventListener('scroll', onScroll, { passive: true });
+onScroll();
+
+/* ============ Hero video scroll-scrub ============ */
+const heroVideo = document.getElementById('heroVideo');
+const heroPin = document.getElementById('heroPin');
+if (heroVideo && heroPin) {
+  let videoDuration = heroVideo.duration || 0;
+  const captureDuration = () => {
+    videoDuration = heroVideo.duration || 0;
+  };
+  // If the video's metadata is already available (e.g. cached), the
+  // "loadedmetadata" event may have already fired before this listener
+  // was attached — read it synchronously too so we don't miss it.
+  if (heroVideo.readyState >= 1) captureDuration();
+  heroVideo.addEventListener('loadedmetadata', captureDuration);
+  let scrubTicking = false;
+  const updateVideoScrub = () => {
+    scrubTicking = false;
+    if (!videoDuration) return;
+    // heroPin is taller than the viewport; the hero itself is sticky inside
+    // it, so the scrollable range while it's pinned is (pinHeight - 100vh).
+    const scrollableDistance = heroPin.offsetHeight - document.documentElement.clientHeight;
+    if (scrollableDistance <= 0) return;
+    const scrolled = -heroPin.getBoundingClientRect().top;
+    const progress = Math.min(Math.max(scrolled / scrollableDistance, 0), 1);
+    // Never seek to the exact duration — some browsers render a blank frame
+    // once a video reaches its end, so we stop just short of it to keep the
+    // last visible frame on screen instead of the image disappearing.
+    const target = Math.min(progress * videoDuration, videoDuration - 0.05);
+    heroVideo.currentTime = Math.max(target, 0);
+  };
+  window.addEventListener('scroll', () => {
+    if (!scrubTicking) {
+      scrubTicking = true;
+      requestAnimationFrame(updateVideoScrub);
+    }
+  }, { passive: true });
+  updateVideoScrub();
+}
+
+/* ============ Stat counters ============ */
+const statIO = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      const el = entry.target;
+      const target = parseInt(el.dataset.count, 10);
+      const duration = 1600;
+      const start = performance.now();
+      const tick = (now) => {
+        const p = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.floor(target * eased);
+        if (p < 1) requestAnimationFrame(tick);
+        else el.textContent = target + (target === 350 || target === 120 ? '+' : '');
+      };
+      requestAnimationFrame(tick);
+      statIO.unobserve(el);
+    }
+  });
+}, { threshold: 0.5 });
+document.querySelectorAll('.stat__num').forEach(el => statIO.observe(el));
+</script>
+
+</body>
+</html>
