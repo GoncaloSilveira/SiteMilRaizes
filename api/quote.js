@@ -10,7 +10,7 @@
 //   6. Sanitisation       — strips HTML tags from free-text fields
 //   7. Email via Resend   — sends a formatted email to CONTACT_EMAIL
 
-const { Resend } = require('@resend/node');
+const { Resend } = require('resend');
 const { z } = require('zod');
 
 // ─── Rate limiter (in-memory, resets on cold start) ───────────────────────────
