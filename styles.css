@@ -239,6 +239,13 @@ em { font-style: italic; color: var(--green-primary); }
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
 }
 .hero__scroll-bounce {
   display: flex;

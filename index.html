@@ -54,12 +54,12 @@
 
     <div class="hero__bottom">
       <div class="container hero__bottom-row">
-        <div class="hero__scroll-indicator">
+        <button type="button" class="hero__scroll-indicator" id="heroScrollBtn" aria-label="Fazer scroll para a secção seguinte">
           <div class="hero__scroll-bounce">
             <span class="hero__scroll-label">Scroll</span>
             <span class="hero__scroll-arrow" aria-hidden="true">↓</span>
           </div>
-        </div>
+        </button>
         <span>Cap. I — A empresa</span>
       </div>
     </div>
@@ -598,6 +598,28 @@ if (heroVideo && heroPin) {
     }
   }, { passive: true });
   updateVideoScrub();
+}
+
+/* ============ Hero scroll indicator click ============ */
+const heroScrollBtn = document.getElementById('heroScrollBtn');
+if (heroScrollBtn && heroPin) {
+  const easeInOutCubic = (t) => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+  const smoothScrollTo = (targetY, duration) => {
+    const startY = window.scrollY;
+    const distance = targetY - startY;
+    const startTime = performance.now();
+    const step = (now) => {
+      const elapsed = now - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      window.scrollTo(0, startY + distance * easeInOutCubic(progress));
+      if (progress < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  };
+  heroScrollBtn.addEventListener('click', () => {
+    const target = heroPin.offsetTop + heroPin.offsetHeight;
+    smoothScrollTo(target, 1800);
+  });
 }
 
 /* ============ Stat counters ============ */
