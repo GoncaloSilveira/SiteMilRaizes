@@ -598,6 +598,37 @@ if (heroVideo && heroPin) {
     }
   }, { passive: true });
   updateVideoScrub();
+
+  // After the screen locks / the computer sleeps, browsers often suspend the
+  // video decoder to save power. Since this video never actually plays (we
+  // only set currentTime), it can come back "frozen" — seeking alone won't
+  // force a new frame to render. Nudge it awake when the tab is visible again;
+  // if it was hidden for a while (real lock/sleep, not a quick tab switch),
+  // force a full reload since a light nudge isn't always enough to recover
+  // the decoder.
+  let heroHiddenAt = null;
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+      heroHiddenAt = Date.now();
+      return;
+    }
+    const wasHiddenLong = heroHiddenAt && (Date.now() - heroHiddenAt) > 3000;
+    heroHiddenAt = null;
+    if (wasHiddenLong || heroVideo.readyState < 2) {
+      const resumeTime = heroVideo.currentTime;
+      heroVideo.load();
+      heroVideo.addEventListener('loadeddata', () => {
+        heroVideo.currentTime = resumeTime;
+        updateVideoScrub();
+      }, { once: true });
+    } else {
+      const playPromise = heroVideo.play();
+      if (playPromise) {
+        playPromise.then(() => heroVideo.pause()).catch(() => {});
+      }
+      updateVideoScrub();
+    }
+  });
 }
 
 /* ============ Hero scroll indicator click ============ */
