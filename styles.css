@@ -194,7 +194,7 @@ em { font-style: italic; color: var(--green-primary); }
   text-shadow: 0 2px 6px rgba(0,0,0,0.45), 0 8px 40px rgba(0,0,0,0.4);
 }
 .hero h1 em {
-  color: var(--green-primary);
+  color: #A39C3E;
   font-weight: 400;
   text-shadow: 0 2px 6px rgba(0,0,0,0.55), 0 8px 40px rgba(0,0,0,0.4);
 }
@@ -211,7 +211,7 @@ em { font-style: italic; color: var(--green-primary); }
 }
 @media (max-width: 880px) { .hero__meta { justify-self: start; } }
 .hero__meta-rule {
-  width: 60px; height: 1px; background: var(--green-primary);
+  width: 60px; height: 1px; background: #A39C3E;
 }
 
 .hero__bottom {
