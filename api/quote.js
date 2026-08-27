@@ -177,7 +177,7 @@ module.exports = async function handler(req, res) {
 
   try {
     await resend.emails.send({
-      from:    'Mil Raízes Site <noreply@milraizes.pt>',
+      from:    'Mil Raízes Site <onboarding@resend.dev>',
       to:      [process.env.CONTACT_EMAIL || 'milraizes@milraizes.pt'],
       replyTo: strip(data.email),
       subject: `Orçamento · ${strip(data.name)} · ${data.services[0]}`,
