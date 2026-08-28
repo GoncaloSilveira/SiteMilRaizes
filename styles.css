@@ -564,14 +564,14 @@ section { position: relative; }
 @media (max-width: 880px) { .sust__grid { grid-template-columns: 1fr; gap: 48px; } }
 .sust__media {
   aspect-ratio: 4 / 5;
-  background:
-    repeating-linear-gradient(45deg,
-      var(--green-soft) 0 14px,
-      #DCE8C9 14px 15px);
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
+}
+.sust__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 .sust__media-tag {
   font-family: var(--mono);
@@ -754,58 +754,17 @@ section { position: relative; }
 
 .contact__map {
   aspect-ratio: 1 / 1;
-  background:
-    linear-gradient(to bottom, #f7f5f0 0%, #e8e4d8 100%);
   position: relative;
   border: 1px solid var(--line);
   overflow: hidden;
 }
-.contact__map-grid {
-  position: absolute; inset: 0;
-  background-image:
-    linear-gradient(to right, rgba(0,0,0,0.04) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0,0,0,0.04) 1px, transparent 1px);
-  background-size: 32px 32px;
-}
-.contact__map-roads {
-  position: absolute; inset: 0;
-}
-.contact__map-pin {
+.contact__map-embed {
   position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -100%);
-  display: flex; flex-direction: column; align-items: center; gap: 8px;
-}
-.contact__map-pin-dot {
-  width: 16px; height: 16px;
-  background: var(--green-primary);
-  border-radius: 50%;
-  border: 3px solid #fff;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  position: relative;
-}
-.contact__map-pin-dot::after {
-  content: "";
-  position: absolute;
-  inset: -4px;
-  border-radius: 50%;
-  border: 2px solid var(--green-primary);
-  animation: ping 2s ease-out infinite;
-}
-@keyframes ping {
-  0% { transform: scale(1); opacity: 1; }
-  100% { transform: scale(2.4); opacity: 0; }
-}
-.contact__map-pin-label {
-  background: var(--paper);
-  border: 1px solid var(--line);
-  padding: 8px 14px;
-  font-family: var(--mono);
-  font-size: 10px;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  white-space: nowrap;
-  margin-top: 16px;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  filter: grayscale(0.15) contrast(1.05);
 }
 
 /* ============ FOOTER ============ */
