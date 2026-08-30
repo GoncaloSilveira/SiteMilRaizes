@@ -448,7 +448,7 @@ section { position: relative; }
   font-size: 15px;
   line-height: 1.6;
   color: var(--mute);
-  max-width: 480px;
+  max-width: min(400px, 30vw);
   opacity: 0;
   max-height: 0;
   transition: opacity 0.5s ease, max-height 0.5s ease, margin 0.5s ease;
@@ -475,10 +475,10 @@ section { position: relative; }
 }
 .service__media {
   position: absolute;
-  right: 22%;
+  right: 10%;
   top: 8px;
   bottom: 8px;
-  width: 280px;
+  width: clamp(180px, 22vw, 280px);
   transform: translateX(20px) scale(0.96);
   pointer-events: none;
   opacity: 0;
